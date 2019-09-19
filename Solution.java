@@ -38,6 +38,9 @@ public class Solution {
 
     /** 
     * The array stores the possibilty to create each sum, up to the target value. 
+    * If current sum (represented by the value of "i") can be created with
+    * the available coin values, then possibleValues[i] = true. 
+    * Othewise possibleValues[i] = false.
     */
     boolean[] possibleValues = new boolean[targetValue + 1];
     possibleValues[0] = true;
